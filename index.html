@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Inder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <h1 class="logo"><span>I</span>NDER</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="ri-close-line fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="ri-menu-line fas" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>
+                    Hi, I'm <span> Inderpal </span> <br />
+                    From Barnala
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------about----------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user-me.png" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        As a recent graduate with a strong passion for web development, I am eager to start my career as a Front End Web Developer. Committed to utilizing my skills in HTML, CSS, JavaScript, and React JS, I aim to contribute to creative web projects. My objective is to acquire practical experience, collaborate with talented teams, and continually enhance my expertise in web development. Excited to tackle challenges, learn from experienced professionals, and make a meaningful impact in front-end development.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Certifications
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Front End Development</span><br />
+                                HTML - <i class="ri-html5-fill"></i><br />
+                                CSS - <i class="ri-css3-fill"></i><br />
+                                JavaScript - <i class="ri-javascript-fill"></i><br />
+                                React Js - <i class="ri-reactjs-line"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>April 2023 to September 2023</span><br />MERN Stack
+                                Development At Excellence Technology.
+                            </li>
+                            <!-- <li><span>2022 -</span><br />Team Lead at StarApp LLC.</li>
+                            <li><span>2019</span><br />Internship at Edureka.</li> -->
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>Secendary Education - 2017</span><br />Baba Sheikh Farid
+                                High School,Barnala.
+                            </li>
+                            <li>
+                                <span>Higher Secendary Education - 2019</span><br />Dr.Raghubir Prakash Sen. Sec.
+                                School,Barnala.
+                            </li>
+                            <li>
+                                <span>Bachelor of Computer Applications (BCA) - 2019 to
+                                    2022</span><br />S.D College Barnala.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------services---------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="ri-code-s-slash-line"></i>
+                    <h2> Custom Website Development</h2>
+                    <p>
+                       Emphasize your skills in building tailor-made websites from scratch, ensuring that they meet the unique needs and objectives of your clients.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="ri-crop-line"></i>
+                    <h2> Responsive Web Design</h2>
+                    <p>
+                       Highlight your ability to create websites that look and function seamlessly on various devices, including desktops, tablets, and smartphones.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="ri-window-fill"></i>
+                    <h2> Front-End Development</h2>
+                    <p>
+                       Specify your expertise in front-end technologies such as HTML, CSS, and JavaScript to create interactive and dynamic web applications.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" />
+                    <div class="layer">
+                        <h3>Multipage Website</h3>
+                        <p>
+                            Handcrafted with ❤️ using Pure HTML and CSS
+                        </p>
+                        <a target="_blank" href="https://inderpal004.github.io/Multipage-Website/"><i class="ri-external-link-line"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" />
+                    <div class="layer">
+                        <h3>Nike Store</h3>
+                        <p>
+                            Crafted with the Power of HTML, CSS, and JavaScript.
+                        </p>
+                        <a target="_blank" href="https://inderpal004.github.io/E-Commerce-Website/"><i class="ri-external-link-line"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" />
+                    <div class="layer">
+                        <h3>Find Movie</h3>
+                        <p>
+                            Created With the Help of React Js.
+                        </p>
+                        <a target="_blank" href="https://inder-movie-finder.netlify.app/"><i class="ri-external-link-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Inderpal004?tab=repositories" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -----------contact-------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="ri-send-plane-fill"></i>inderpalsingh4040@gmail.com</p>
+                    <p><i class="ri-phone-fill"></i>+919023640440</p>
+                    <div class="social-icons">
+                        <!-- <a href=""><i class="ri-snapchat-fill"></i></a> -->
+                        <a href="https://github.com/Inderpal004" target="_blank"><i class="ri-github-fill"></i></a>
+                        <a href="https://www.instagram.com/i_am_inderpal/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                        <a href="www.linkedin.com/in/inderpal-singh-3a6453293" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                    </div>
+                    <a href="images/Inderpal CV.pdf" class="btn btn-2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form onsubmit="sendEmail();reset();return false;">
+                        <input type="text" name="Name" id="name" placeholder="Enter Your Name" required />
+                        <input type="email" name="Email" id="email" placeholder="Enter Your Email" required />
+                        <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        Copyright &copy; Inder. Made With <i class="ri-heart-fill"></i> by
+        Inderpal
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
